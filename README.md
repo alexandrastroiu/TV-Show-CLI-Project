@@ -13,7 +13,8 @@ The program searches a single movie by name (case-insesitively and ignoring any 
 The search by name tolerates typos and provides the closest answer based on the user's query (it provides the information of the movie with the most similar name found in the database).
 
 In case the response is invalid, an internal server error occurs or the movie is not found in the database
-(the response is empty, the movie has no id key or no value for id) the program exits and a message is displayed for the user: >"We found no matches in the database for the entry _current entry_. Try again!"
+(the response is empty, the movie has no id key or no value for id) the program exits and a message is displayed for the user:
+>"We found no matches in the database for the entry _current entry_. Try again!"
 
 Otherwise a message and the basic information about the movie will be displayed on the screen:
 >"We found a match in the database for the entry  _current entry_!"
@@ -48,10 +49,12 @@ The requirements.txt lists the third party packages used in the project.
 
 #### Libraries:
 The programming language used for the project is Python. Both standard Python libraries and third-party libraries were used.
+
 Python Standard Libraries:
 * sys
 * csv
 * random
+
 Third-Party Libraries:
 * requests
 * fancify-text
@@ -65,9 +68,13 @@ To install the third-party packages used in the project use the command:
 
 #### Usage:
 A valid search command for a movie which is available in the database is:
+
 `python project.py --search name` - change name for the name of the movie you want to search
+
 `python project.py --search "multiple words name"` - type like this for a movie name with multiple words
+
 `python project.py --search friends`
+
 Other equivalent commands for the prior command are:
 ```
 python project.py --SEARCH FRIENDS
@@ -76,9 +83,11 @@ python project.py      --SearCH       Friends
 ```
 
 A few valid sort commands are:
-`python project.py --sort order genre`- change order for asc (ascending) or desc (descending)
-                                      - change genre for a valid genre
-                                      - if genre is not specified, all movies are sorted by default
+`python project.py --sort order genre`
+- change order for asc (ascending) or desc (descending)
+- change genre for a valid genre
+- if genre is not specified, all movies are sorted by default
+
 The valid genres are:
 * Adventure, History, Thriller
 * Drama, Fantasy, Espionage
@@ -109,6 +118,7 @@ The valid genres are:
 `python project.py --sort` - invalid command
 
 The valid plot command is:
+
 `python project.py --plot rating genres` - do no change the words
 
 Some equivalent commands are:
