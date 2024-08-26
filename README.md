@@ -48,11 +48,11 @@ The requirements.txt lists the third party packages used in the project.
 
 #### Libraries:
 The programming language used for the project is Python. Both standard Python libraries and third-party libraries were used.
-*Python Standard Libraries:
+Python Standard Libraries:
 * sys
 * csv
 * random
-*Third-Party Libraries:
+Third-Party Libraries:
 * requests
 * fancify-text
 * Beautiful Soup
@@ -60,6 +60,7 @@ The programming language used for the project is Python. Both standard Python li
 
 #### Installation:
 To install the third-party packages used in the project use the command:
+
 `pip install -r requirements.txt`
 
 #### Usage:
@@ -75,9 +76,9 @@ python project.py      --SearCH       Friends
 ```
 
 A few valid sort commands are:
-`python project.py --sort order genre` - change order for asc (ascending) or desc (descending)
-                                       - change genre for a valid genre
-                                       - if genre is not specified, all movies are sorted by default
+`python project.py --sort order genre`- change order for asc (ascending) or desc (descending)
+                                      - change genre for a valid genre
+                                      - if genre is not specified, all movies are sorted by default
 The valid genres are:
 * Adventure, History, Thriller
 * Drama, Fantasy, Espionage
@@ -88,18 +89,28 @@ The valid genres are:
 * Comedy, Science-Fiction, War, Mystery
 
 `python project.py --sort asc` - sorts available movies in ascending order by rating
+
 `python project.py --sort desc` - sorts available movies in descending order by rating
+
 `python project.py --sort asc Romance`  - sorts available Romance movies in ascending order by rating
+
 `python project.py --SORT ASC ROMANCE`  - equivalent command
+
 `python project.py --SoRt AsC RomanCe` - equivalent command
+
 `python project.py --SORT      asc    Romance`
+
 `python project.py --sort  desc Romance` - sorts available Romance movies in descending order by rating
+
 `python project.py --sort desc Horror` - sorts available Romance movies in descending order by rating
+
 `python project.py --sort Romance` - invalid command
+
 `python project.py --sort` - invalid command
 
 The valid plot command is:
 `python project.py --plot rating genres` - do no change the words
+
 Some equivalent commands are:
 ```
 python project.py --PLOT RATING GENRES
