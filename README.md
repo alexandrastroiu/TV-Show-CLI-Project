@@ -40,7 +40,8 @@ The program also uses the standard library random in order to randomize the colo
 
 The backend of matplotlib is set to Agg in order to display the plot in a file and not in an interactive window.
 
-The bar chart is then saved in a png file (plot.png) and a message is displayed to the user to ensure the program is user-freindly and easy to user: >"Plot saved as 'plot.png'"
+The bar chart is then saved in a png file (plot.png) and a message is displayed to the user to ensure the program is user-freindly and easy to user:
+>"Plot saved as 'plot.png'"
 
 #### Files:
 The project.py contains the main code of the project written in Python.
