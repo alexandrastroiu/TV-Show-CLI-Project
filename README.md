@@ -5,12 +5,12 @@ The program is a command-line interface data scraper, it fetches data related to
 a free and public API [TVMAZE API](https://api.tvmaze.com).
 
 #### Features:
-The program allows the user to process the extracted data by choosing one out of three options and typing the specific command in the terminal: searching for a movie by name and displaying the basic information about it, sorting the available movies(all the movies of a specified genre or all by default) in the database in ascending or descending order by rating, plotting a bar chart of average ratings by movie genre.
+The program allows the user to process the extracted data by choosing one out of three options and typing the specific command in the terminal: searching for a movie by name and displaying the basic information about it, sorting the available movies (all the movies of a specified genre or all by default) in the database in ascending or descending order by rating, plotting a bar chart of average ratings by movie genre.
 
 * Search:
-The program searches a single movie by name (case-insesitively and ignoring any leading or trailing whitespaces, the length of he command has to be valid) by making a GET request to the API.
+The program searches a single movie by name (case-insesitively and ignoring any leading or trailing whitespaces, the length of the command has to be valid) by making a GET request to the API.
 
-The search by name tolerates typos and provides the closest answer based on the user's query (it provides the information of the movie with the most similar name found in the database).
+The search by name tolerates typos and provides the closest answer based on the user's query (it provides the information about the movie with the most similar name found in the database).
 
 In case the response is invalid, an internal server error occurs or the movie is not found in the database
 (the response is empty, the movie has no id key or no value for id) the program exits and a message is displayed for the user:
@@ -25,7 +25,7 @@ The program also handles missing  fields (keys) in the information provided abou
 the get() method for dictionaries and specifying default values. It also handles fields (keys) which have the value set as None and sets another default value for them.
 
 * Sort:
-The program sorts the movies available in the database(the movies by a genre specified by the user, otherwise all the movies available) in ascending or descending order (as specified by  the user) by rating score. (the program filters out the movies that have no rating score available and does not include them in the list)
+The program sorts the movies available in the database (the movies by a genre specified by the user, otherwise all the movies available) in ascending or descending order (as specified by  the user) by rating score. (the program filters out the movies that have no rating score available and does not include them in the list)
 
 The command typed in the terminal by the user is validated: the length of the command has to be valid, the sorting is case-insensitive and ignores any trailing and leading whitespaces, the sorting can only be ascending or descending and the movie genre type has to be valid movie genre. (at least a single movie of that genre exists in the database)
 
@@ -36,7 +36,7 @@ The program plots a bar chart  (using matplotlib) of each genre and the average 
 
 The command typed by the user (case-insestively and ignoring leading and trailing whitespaces) in the terminal for plotting is validated: the command must have a valid length, it also verifies that the user wants to plot genres by rating which is the only available functionality for plotting. In case the command is not valid, the program exits and displays a specific message to the user.
 
-The program also uses the standard library random in order to randomize the colors of the chart each time the user enter the specific command for plotting in the terminal.
+The program also uses the standard library random in order to randomize the colors of the chart each time the user enters the specific command for plotting in the terminal.
 
 The backend of matplotlib is set to Agg in order to display the plot in a file and not in an interactive window.
 
