@@ -65,6 +65,7 @@ Third-Party Libraries:
 * matplotlib
 
 #### Installation:
+You must have Python 3.x installed.
 To install the third-party packages used in the project use the command:
 
 `pip install -r requirements.txt`
