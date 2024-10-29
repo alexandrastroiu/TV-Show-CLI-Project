@@ -10,7 +10,7 @@ The program allows the user to process the extracted data by choosing one out of
 * Search:
 The program searches a single movie by name (case-insesitively and ignoring any leading or trailing whitespaces, the length of the command has to be valid) by making a GET request to the API.
 
-The search by name tolerates typos and provides the closest answer based on the user's query (it provides the information about the movie with the most similar name found in the database).
+The search by name tolerates typos and provides the closest answer based on the user's query. (it provides the information about the movie with the most similar name found in the database)
 
 In case the response is invalid, an internal server error occurs or the movie is not found in the database
 (the response is empty, the movie has no id key or no value for id) the program exits and a message is displayed for the user:
