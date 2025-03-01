@@ -1,10 +1,11 @@
-# TV Show CLI Data Scraper
-#### Video Demo:  <https://youtu.be/XtHSBj0rWoU>
-#### Description:
-The program is a command-line interface data scraper, it fetches data related to TV shows and movies using
+# TV Show CLI Project
+
+## Video Demo:  <https://youtu.be/XtHSBj0rWoU>
+## Description:
+The program is a command-line interface application, it fetches data related to TV shows and movies using
 a free and public API [TVMAZE API](https://api.tvmaze.com).
 
-#### Features:
+## Features:
 The program allows the user to process the extracted data by choosing one out of three options and typing the specific command in the terminal: searching for a movie by name and displaying the basic information about it, sorting the available movies (all the movies of a specified genre or all by default) in the database in ascending or descending order by rating, plotting a bar chart of average ratings by movie genre.
 
 * **Search**:
@@ -45,12 +46,12 @@ The bar chart is then saved in a png file (plot.png) and a message is displayed 
 
 ![Bar Chart Plot](images/plot.png "Genre-Average Rating Plot")
 
-#### Files:
+## Files:
 The project.py file contains the main code of the project written in Python.
 The test_project.py file contains unit tests for five functions from the project.py file.
 The requirements.txt file lists the third party packages used in the project.
 
-#### Libraries:
+## Libraries:
 The programming language used for the project is Python. Both standard Python libraries and third-party libraries were used.
 
 Python Standard Libraries:
@@ -64,14 +65,14 @@ Third-Party Libraries:
 * Beautiful Soup
 * matplotlib
 
-#### Installation:
+## Installation:
 You must have Python 3.x installed.
 
 To install the third-party packages used in the project use the command:
 
 `pip install -r requirements.txt`
 
-#### Usage:
+## Usage:
 A valid search command for a movie which is available in the database is:
 
 `python project.py --search name` - change name for the name of the movie you want to search
