@@ -1,9 +1,10 @@
 # TV Show CLI Project
 
-## Video Demo:  <https://youtu.be/XtHSBj0rWoU>
 ## Description:
 The program is a command-line interface application, it fetches data related to TV shows and movies using
 a free and public API [TVMAZE API](https://api.tvmaze.com).
+
+## Video Demo:  <https://youtu.be/XtHSBj0rWoU>
 
 ## Features:
 The program allows the user to process the extracted data by choosing one out of three options and typing the specific command in the terminal: searching for a movie by name and displaying the basic information about it, sorting the available movies (all the movies of a specified genre or all by default) in the database in ascending or descending order by rating, plotting a bar chart of average ratings by movie genre.
@@ -68,7 +69,11 @@ Third-Party Libraries:
 ## Installation:
 You must have Python 3.x installed.
 
-To install the third-party packages used in the project use the command:
+1. Clone the repository:
+
+`git clone https://github.com/alexandrastroiu/TV-Show-CLI-Project.git`
+
+2. To install the third-party packages used in the project use the command:
 
 `pip install -r requirements.txt`
 
