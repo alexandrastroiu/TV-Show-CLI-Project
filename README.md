@@ -4,7 +4,8 @@
 The program is a command-line interface application, it fetches data related to TV shows and movies using
 a free and public API [TVMAZE API](https://api.tvmaze.com).
 
-## Video Demo:  <https://youtu.be/XtHSBj0rWoU>
+## Video Demo:  
+<https://youtu.be/XtHSBj0rWoU>
 
 ## Features:
 The program allows the user to process the extracted data by choosing one out of three options and typing the specific command in the terminal: searching for a movie by name and displaying the basic information about it, sorting the available movies (all the movies of a specified genre or all by default) in the database in ascending or descending order by rating, plotting a bar chart of average ratings by movie genre.
@@ -70,21 +71,25 @@ Third-Party Libraries:
 You must have Python 3.x installed.
 
 1. Clone the repository:
-
-`git clone https://github.com/alexandrastroiu/TV-Show-CLI-Project.git`
+```
+git clone https://github.com/alexandrastroiu/TV-Show-CLI-Project.git
+```
 
 2. To install the third-party packages used in the project use the command:
-
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 ## Usage:
 A valid search command for a movie which is available in the database is:
 
-`python project.py --search name` - change name for the name of the movie you want to search
-
-`python project.py --search "multiple words name"` - type like this for a movie name with multiple words
-
-`python project.py --search friends`
+```
+python project.py --search name - change name for the name of the movie you want to search
+python project.py --search "multiple words name" - type like this for a movie name with multiple words
+```
+```
+python project.py --search friends
+```
 
 Other equivalent commands for the prior command are:
 ```
@@ -108,29 +113,23 @@ The valid genres are:
 * Music, Anime, Action
 * Comedy, Science-Fiction, War, Mystery
 
-`python project.py --sort asc` - sorts available movies in ascending order by rating
-
-`python project.py --sort desc` - sorts available movies in descending order by rating
-
-`python project.py --sort asc Romance`  - sorts available Romance movies in ascending order by rating
-
-`python project.py --SORT ASC ROMANCE`  - equivalent command
-
-`python project.py --SoRt AsC RomanCe` - equivalent command
-
-`python project.py --SORT      asc    Romance`
-
-`python project.py --sort  desc Romance` - sorts available Romance movies in descending order by rating
-
-`python project.py --sort desc Horror` - sorts available Romance movies in descending order by rating
-
-`python project.py --sort Romance` - invalid command
-
-`python project.py --sort` - invalid command
+```
+python project.py --sort asc - sorts available movies in ascending order by rating
+python project.py --sort desc - sorts available movies in descending order by rating
+python project.py --sort asc Romance - sorts available Romance movies in ascending order by rating
+python project.py --SORT ASC ROMANCE - equivalent command
+python project.py --SoRt AsC RomanCe - equivalent command
+python project.py --SORT      asc    Romance
+python project.py --sort  desc Romance - sorts available Romance movies in descending order by rating
+python project.py --sort desc Horror - sorts available Romance movies in descending order by rating
+python project.py --sort Romance - invalid command
+python project.py --sort - invalid command
+```
 
 The valid plot command is:
-
-`python project.py --plot rating genres` - do no change the words
+```
+python project.py --plot rating genre
+```
 
 Some equivalent commands are:
 ```
@@ -138,4 +137,3 @@ python project.py --PLOT RATING GENRES
 python project.py --PloT RaTiNg GeNrEs
 python project.py    --PLoT    rAtiNg    Genres
 ```
-
